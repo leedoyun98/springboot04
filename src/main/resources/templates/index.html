@@ -8,8 +8,26 @@
 </head>
 <body>
 <h1>Home</h1>
-<a href="#" id="join" > 게시글쓰기</a>
-<span style="width: 50pc"> </span>
+<a href="#" id="writing" > 게시글쓰기</a>
+<a href="#" id="update">글수정</a>
+<a href="#" id = "mywriting">내글보기</a>
+<a href="#" id = "detail">글상세</a>
+<script>
+    document.getElementById('writing').addEventListener('click',e=>{
+        location.href = '/move/articles/writing' 
+    })
+    document.getElementById('update').addEventListener('click',e=>{
+        location.href ='/move/articles/update'
+    })
+    document.getElementById('mywriting').addEventListener('click',e=>{
+        location.href ='/move/articles/mywriting'
+    })
+    document.getElementById('detail').addEventListener('click',e=>{
+        location.href ='/move/articles/detail'
+    })
+    
+</script>
+
 
 
 </body>
